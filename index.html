@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Channel</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -25,103 +25,29 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="main">
-      <div class="head">
-        <h1>Weather Channel</h1>
-      </div>
-      <br />
-      <form class="search">
-        <input
-          class="formSearch"
-          type="text"
-          autofocus="on"
-          placeholder="Type the city..."
-        />
-        <button type="button" class="btn">Search</button>
-        <button type="button" class="btnCurrentLoc">Current Location</button>
-      </form>
+    <div class="container">
+      <h1>New York</h1>
+      <ul>
+        <li>Sunday 05:00</li>
+        <li>Cloudy</li>
+      </ul>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3">
-            <h1 class="icon"><i class="bi bi-cloud-sun"></i></h1>
-          </div>
-          <div class="col-lg-3">
-            <span id="temp" class="temp-c">21</span>
-            <span class="degree">
-              <a href="" class="degC">˚C |</a>
-              <a href="" class="degF">˚F</a>
-            </span>
-          </div>
-          <div class="col-lg-4">
-            <div class="city">
-              <h3>Paris</h3>
-            </div>
-            <div class="time"></div>
-          </div>
+      <div class="row">
+        <div class="col-6">
+          <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="Clear"/>
+          12°C | °F
+        </div>
+
+        <div class="col-6">
+          <ul>
+            <li>Precipitation: 15%</li>
+            <li>Humidity: 82%</li>
+            <li>Wind: 5 km/h</li>
+          </ul>
         </div>
       </div>
 
-      <div class="prediction">
-        <div class="row">
-          <div class="col-lg-2">
-            <div class="card">
-              <div class="card-body">
-                <h2 class="card-title"><i class="bi bi-cloud-sun"></i></h2>
-                <h3 class="card-temp">21˚C</h3>
-                <h5 class="card-day">Mon</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title"><i class="bi bi-clouds"></i></h5>
-                <h3 class="card-temp">21˚C</h3>
-                <h5 class="card-day">Tue</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title"><i class="bi bi-cloud-sun"></i></h5>
-                <h3 class="card-temp">21˚C</h3>
-                <h5 class="card-day">Wed</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title"><i class="bi bi-cloud-drizzle"></i></h5>
-                <h3 class="card-temp">21˚C</h3>
-                <h5 class="card-day">Thu</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title"><i class="bi bi-clouds"></i></h5>
-                <h3 class="card-temp">21˚C</h3>
-                <h5 class="card-day">Fri</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <i class="bi bi-brightness-high"></i>
-                </h5>
-                <h3 class="card-temp">21˚C</h3>
-                <h5 class="card-day">Sat</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
       <div class="footer">
         <a href="https://github.com/RenyRino/Weather_Project"
           >Open-source code</a
