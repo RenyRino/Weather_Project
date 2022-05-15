@@ -60,3 +60,8 @@ li {
   padding: 5px;
   border-radius: 5px;
 }
+
+.weather-temp .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
