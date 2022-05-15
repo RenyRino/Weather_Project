@@ -27,38 +27,49 @@
   <body>
     <div class="container">
       <div class="weatherApp-Wrap">
-      <div class="weatherApp">
-      <h1>New York</h1>
-      <ul>
-        <li>Sunday 05:00</li>
-        <li>Cloudy</li>
-      </ul>
+        <div class="weatherApp">
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li id="date"></li>
+              <li id="description"></li>
+            </ul>
+          </div>
 
-      <div class="row">
-        <div class="col-6">
-          <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="Clear"/>
-          12°C | °F
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temp">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                  alt="Clear"
+                  class="float-left"
+                />
+                <div class="float-left">
+                  <strong id="temp"></strong>
+                  <span class="unit"
+                    >°C | <a href="#" style="text-decoration: none">°F</a></span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <ul>
+                <li id="humidity"></li>
+                <li id="wind"></li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div class="col-6">
-          <ul>
-            <li>Precipitation: 15%</li>
-            <li>Humidity: 82%</li>
-            <li>Wind: 5 km/h</li>
-          </ul>
+        <div class="footer">
+          <a href="https://github.com/RenyRino/Weather_Project"
+            >Open-source code</a
+          >
+          by Reny Rinowati
         </div>
       </div>
-      </div>
     </div>
-
-      <div class="footer">
-        <a href="https://github.com/RenyRino/Weather_Project"
-          >Open-source code</a
-        >
-        by Reny Rinowati
-      </div>
-    </div>
-  </div>
 
     <script src="script.js"></script>
   </body>
