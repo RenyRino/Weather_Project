@@ -86,7 +86,7 @@ function displayTemp(response) {
   descriptionElement.innerHTML = response.data.weather[0].main;
   humidityElement.innerHTML = "Humidity: " + response.data.main.humidity + "%";
   windElement.innerHTML =
-    "Wind: " + Math.round(response.data.wind.speed) + " km/h";
+    "Wind: " + Math.round(response.data.wind.speed) + " m/s";
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
